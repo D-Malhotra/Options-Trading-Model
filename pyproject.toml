@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mymath"
+version = "0.1.0"
+description = "A simple math package"
+authors = [
+    { name="Deepak Malhotra", email="your_email@example.com" }
+]
+license = "MIT"
+dependencies = ["numpy", "pandas"]
+
+[tool.setuptools.packages.find]
+where = ["."]
