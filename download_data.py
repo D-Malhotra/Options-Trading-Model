@@ -10,3 +10,6 @@ def download_data(ticker: str, range: str, granularity: str):
     price = ticker.yahoo_api_price(range=range, dataGranularity=granularity)
     return price 
 
+def log_returns(price_data):
+    return np.log(price_data[1:]/price_data[:-1])
+

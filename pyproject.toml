@@ -10,7 +10,7 @@ authors = [
     { name="Deepak Malhotra", email="your_email@example.com" }
 ]
 license = "MIT"
-dependencies = ["numpy", "pandas"]
+dependencies = ["numpy", "pandas", "matplotlib", "yfinance", "stockdex"]
 
 [tool.setuptools.packages.find]
 where = ["."]
