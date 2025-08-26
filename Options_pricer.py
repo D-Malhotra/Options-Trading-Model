@@ -39,5 +39,11 @@ def implied_vol(S, K, T, r, vol, C_market t=0):
     for i in range(len(C_market)):
         K_i, T_i, C_market_i = K[i], T[i], C_market[i]
         iv = brentq(f, 0.001, 3, args=(S, K_i, T_i, r, C_market_i))
+        IV_list.append(iv)
+    
+    return IV_list
+
+
+
 
 
